@@ -5,13 +5,7 @@ description: >
   engineering.
 url: "https://peferron.com"
 
-# Blog settings
-blog_title: peferron's blog
-blog_description: >
-  Blog description
-  Can be multiline
-blog_baseurl: "/blog"
-
+# Build settings
 permalink: pretty
 markdown: kramdown
 exclude:
