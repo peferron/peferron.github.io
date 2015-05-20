@@ -1,0 +1,11 @@
+#!/bin/bash
+
+bundle exec jekyll serve &
+
+sleep 1
+
+browser-sync start \
+--proxy="localhost:4000" \
+--files="**/*.html,**/*.css,**/*.js" \
+--browser="google chrome" \
+--reloadDelay="1000"

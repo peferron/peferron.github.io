@@ -1,0 +1,100 @@
+---
+---
+
+// Common
+
+$normal: 22px
+$small: 0.8 * $normal
+$verysmall: 0.6 * $normal
+
+$text: rgba(0, 0, 0, 0.8)
+$link: #0059a6
+$gray: rgba(0, 0, 0, 0.5)
+$lightgray: #CCC
+
+body
+  height: 100%
+  font-family: Alegreya, serif
+  font-size: 22px
+  line-height: 35px
+  font-weight: 400
+  color: $text
+  background: white
+  max-width: 700px
+  margin: 0 auto
+  padding: 20px
+  text-align: center
+
+h1, h2, h3, h4, h5, h6
+  line-height: normal
+
+a, a:visited, a:hover
+  color: $link
+  text-decoration: none
+
+a:hover
+  text-decoration: underline
+
+.content
+  display: inline-block
+  text-align: left
+
+.date
+  color: $gray
+
+// Home
+
+.home__avatar
+  display: inline-block
+  width: 100%
+  margin: 20px 0 40px
+
+.home__avatar__img
+  width: 150px
+  height: 263px
+  display: block
+
+.home__avatar__ground
+  height: 10px
+  // background is randomly set by inline JS.
+
+.home__name
+  font-size: 1.5em
+
+.home__contact
+
+.home__posts
+  display: inline-block
+  list-style-type: none
+  padding: 0
+  margin: 40px 0 0
+
+.home__rss
+  font-size: $small
+
+// Post
+
+.post__header, .post__footer
+  font-size: $small
+
+.post__title
+  margin: 11px 0 30px
+
+.figure
+  margin: 0
+
+.figure__img-container
+  @media (max-width: 740px)
+    margin: 0 -20px
+
+.figure__img
+  width: 100%
+
+.figure__caption
+  color: $gray
+  text-align: center
+  font-size: $small
+
+.post__license
+  color: $gray
+  font-size: $verysmall

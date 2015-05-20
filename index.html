@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<div class="home__avatar">
+  <img class="home__avatar__img" src="/images/avatar_300x526.jpg">
+  <div class="home__avatar__ground"></div>
+  <script>
+    var colors = [
+      '#f24d8f', // pink
+      '#0d9fd8', // blue
+      '#8ad749'  // green
+    ];
+
+    var color;
+    while (true) {
+      var i = Math.floor(Math.random() * colors.length);
+      color = colors[i];
+      try {
+        if (colors.length > 1 && localStorage.color === color) {
+          continue;
+        }
+      } catch (e) {
+      }
+      break;
+    }
+
+    document.querySelector('.home__avatar__ground').style.background = color;
+
+    try {
+      localStorage.color = color;
+    } catch (e) {
+    }
+  </script>
+</div>
+<br>
+
+<span class="home__name">Pierre-Emile (Mat) Ferron</span>
+<br>
+
+<span class="home__contact">
+  <a href="https://github.com/peferron">GitHub</a> /
+  <a href="https://www.linkedin.com/in/peferron">LinkedIn</a> /
+  <a href="mailto:peferron@gmail.com">peferron@gmail.com</a>
+</span>
+<br>
+
+<ul class="home__posts">
+  {% for post in site.posts %}
+    <li>
+      <a class="home__post" href="{{ post.url }}">{{ post.title }}</a>
+      <span class="date">— {% include date.html date=post.date %}</span>
+    </li>
+  {% endfor %}
+</ul>
+<br>
+
+<a class="home__rss" href="/feed.xml">Subscribe via RSS</a>

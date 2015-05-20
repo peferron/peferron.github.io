@@ -1,15 +1,18 @@
 # Site settings
-title: Your awesome title
-email: peferron@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://peferron.com" # the base hostname & protocol for your site
-github_username: peferron
+title: Pierre-Emile (Mat) Ferron
+description: >
+  Site description
+  Can be multiline
+url: "https://peferron.com"
 
-# Build settings
+# Blog settings
+blog_title: peferron's blog
+blog_description: >
+  Blog description
+  Can be multiline
+blog_baseurl: "/blog"
+
+permalink: pretty
 markdown: kramdown
 exclude:
   - CNAME
@@ -17,6 +20,7 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - watch
 defaults:
   -
     values:
