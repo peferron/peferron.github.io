@@ -1,8 +1,8 @@
 # Site settings
 title: Pierre-Emile (Mat) Ferron
 description: >
-  Site description
-  Can be multiline
+  Personal website of Pierre-Emile (Mat) Ferron. Rust, Go, JS, and getting better at software
+  engineering.
 url: "https://peferron.com"
 
 # Blog settings
