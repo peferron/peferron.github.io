@@ -3,6 +3,12 @@
 
 // Common
 
+$ipadwidth: 768px
+$padding: 20px
+$doublepadding: $padding * 2
+$halfpadding: $padding / 2
+$maxwidth: $ipadwidth - $doublepadding
+
 $normal: 22px
 $small: 0.8 * $normal
 $verysmall: 0.6 * $normal
@@ -20,9 +26,9 @@ body
   font-weight: 400
   color: $text
   background: white
-  max-width: 700px
+  max-width: $maxwidth
   margin: 0 auto
-  padding: 20px
+  padding: $padding
   text-align: center
 
 h1, h2, h3, h4, h5, h6
@@ -47,7 +53,7 @@ a:hover
 .home__avatar
   display: inline-block
   width: 100%
-  margin: 20px 0 40px
+  margin: $padding 0 $doublepadding
 
 .home__avatar__img
   width: 150px
@@ -55,7 +61,7 @@ a:hover
   display: block
 
 .home__avatar__ground
-  height: 10px
+  height: $halfpadding
   // background is randomly set by inline JS.
 
 .home__name
@@ -65,7 +71,7 @@ a:hover
   display: inline-block
   list-style-type: none
   padding: 0
-  margin: 40px 0 0
+  margin: $doublepadding 0 0
 
 .home__rss
   font-size: $small
@@ -81,19 +87,24 @@ a:hover
 .figure
   margin: 0
 
-.figure__img-container
-  @media (max-width: 740px)
-    margin: 0 -20px
+.figure__a
+  display: block
 
 .figure__img
   width: 100%
   display: block
 
 .figure__caption
-  margin-top: 10px
+  margin: $halfpadding 0 0
   color: $gray
   text-align: center
   font-size: $small
+
+@media (max-width: $ipadwidth)
+  .figure
+    margin: 0 (-$padding)
+  .figure__caption
+    margin: $halfpadding $padding 0
 
 .post__license
   color: $gray

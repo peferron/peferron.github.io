@@ -1,8 +1,6 @@
 <figure class="figure">
-  {% if include.href %}<a href="{{ include.href }}">{% endif %}
-    <div class="figure__img-container">
-      <img class="figure__img" src="/images/{{ include.src }}">
-    </div>
+  {% if include.href %}<a class="figure__a" href="{{ include.href }}">{% endif %}
+    <img class="figure__img" src="/images/{{ include.src }}">
   {% if include.href %}</a>{% endif %}
   <figcaption class="figure__caption">{{ include.caption }}</figcaption>
 </figure>
