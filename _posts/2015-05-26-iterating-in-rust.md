@@ -100,7 +100,7 @@ fn powers() -> Vec<u32> {
 }
 ```
 
-It would work quite well in our example because there are only 32 such values. But we can do better: not allocate a `Vec` at all, and lazily generate only as many numbers as we need.
+It would work quite well in our example because there are only 32 such values. But there is room for improvement: not allocate any `Vec`, and lazily generate only as many numbers as we need. Why generate 32 numbers if we only need 10?
 
 ## Iterators to the rescue
 
