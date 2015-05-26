@@ -44,6 +44,7 @@ a:hover
 .content
   display: inline-block
   text-align: left
+  max-width: 100%
 
 .date
   color: $gray
@@ -109,3 +110,25 @@ a:hover
 .post__license
   color: $gray
   font-size: $verysmall
+
+// Code
+
+@import syntax-highlighting.scss
+
+code, .highlight
+  background: #F7F7F7
+
+code
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace
+  font-size: 85%
+  padding: 0.2em 0
+  &:before, &:after
+    letter-spacing: -0.2em
+    content: "\00a0"
+
+.highlight
+  pre
+    line-height: normal
+    padding: 1em
+  code:before, code:after
+    content: none

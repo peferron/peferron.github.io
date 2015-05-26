@@ -6,8 +6,8 @@ description: >
 url: "https://peferron.com"
 
 # Build settings
+markdown: redcarpet
 permalink: pretty
-markdown: kramdown
 exclude:
   - CNAME
   - Gemfile
