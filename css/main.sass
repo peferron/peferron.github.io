@@ -101,12 +101,6 @@ a:hover
   text-align: center
   font-size: $small
 
-@media (max-width: $ipadwidth)
-  .figure
-    margin: 0 (-$padding)
-  .figure__caption
-    margin: $halfpadding $padding 0
-
 .post__license
   color: $gray
   font-size: $verysmall
@@ -132,3 +126,11 @@ code
     padding: 1em
   code:before, code:after
     content: none
+
+// Mobile
+
+@media (max-width: $ipadwidth)
+  .figure, .highlight
+    margin: 0 (-$padding)
+  .figure__caption
+    margin: $halfpadding $padding 0
