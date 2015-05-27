@@ -22,8 +22,7 @@ body
   height: 100%
   font-family: Alegreya, serif
   font-size: 22px
-  line-height: 35px
-  font-weight: 400
+  line-height: 1.6
   color: $text
   background: white
   max-width: $maxwidth
@@ -113,8 +112,7 @@ code, .highlight
   background: #F7F7F7
 
 code
-  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace
-  font-size: 85%
+  font-family: Inconsolata, Consolas, monospace
   padding: 0.2em 0
   &:before, &:after
     letter-spacing: -0.2em
@@ -122,10 +120,12 @@ code
 
 .highlight
   pre
-    line-height: normal
+    line-height: 1.2
     padding: 1em
-  code:before, code:after
-    content: none
+  code
+    font-size: 85%
+    &:before, &:after
+      content: none
 
 // Mobile
 
