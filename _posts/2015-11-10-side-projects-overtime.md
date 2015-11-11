@@ -31,13 +31,13 @@ Lessons from this experiment:
 * Time spent on side projects does not contribute much towards my burnout limit.
 * Heavy overtime works—for a time. After one month my mental state starts to suffer. After three months my output decreases back to normal.
 
-Side projects contribute a lot to my happiness because they are a great way to learn. In my opinion, `d` hours of day job plus `s` hours of side projects is a much better learning strategy than `d + s` hours of day job without any side projects, no matter how great the day job is. (This might be untrue for special cases like founder or sole engineer in a tiny startup. The range of responsibilities there is so vast it's like having a myriad of side projects that happen to be related.)
+Side projects contribute a lot to my happiness because they are a great way to learn. In my opinion, `d` hours of day job plus `s` hours of side projects is a much better learning strategy than `d + s` hours of day job without any side projects. No matter how great the day job is. (This might be untrue for special cases like founder or sole engineer in a tiny startup. The range of responsibilities there is so vast it's like having a myriad of side projects that happen to be related.)
 
-Becoming better on your own will end up benefiting your day job as well. Eventually you will bring more value in `d` hours that you would have in `d + s` otherwise. This is especially true if you enjoy your day job and intend to stay for multiple years.
+Becoming better on your own will end up benefiting your day job as well. Eventually you will bring more value in `d` hours that you would have in `d + s` otherwise. This is especially true if you enjoy your day job and intend to stay for many years.
 
 {% include figure.html class="figure--noscale" src="scv.png" caption="Your best friend, the SCV." %}
 
-This is old news to anyone who played or watched real-time strategy games such as Starcraft. You don't want to spend 100% of your economy producing SCVs (the Terran worker in Starcraft). But, unless going for a timing push, you certainly don't want to completely stop producing SCVs either, or you will get crushed long-term. Your best strategy is to keep a steady production of SCVs going for almost the entire duration of the game.
+This is old news to anyone who played or watched real-time strategy games such as Starcraft. You don't want to spend 100% of your economy producing SCVs (the Terran worker in Starcraft). But, unless going for a timing push, you don't want to completely stop producing SCVs either, or you will get crushed long-term. Your best strategy is to keep a steady production of SCVs going for almost the entire duration of the game.
 
 Your side projects are your SCVs. Keep building them.
 
