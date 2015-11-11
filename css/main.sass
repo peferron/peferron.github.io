@@ -94,6 +94,10 @@ a:hover
   width: 100%
   display: block
 
+.figure--noscale .figure__img
+  width: auto
+  margin: 0 auto
+
 .figure__caption
   margin: $halfpadding 0 0
   color: $gray
@@ -103,6 +107,17 @@ a:hover
 .post__license
   color: $gray
   font-size: $verysmall
+
+.youtube
+  position: relative
+  width: 100%
+  padding-top: 56.25%
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
 
 // Code
 
@@ -114,6 +129,7 @@ code, .highlight
 code
   font-family: Inconsolata, Consolas, monospace
   padding: 0.2em 0
+  white-space: nowrap
   &:before, &:after
     letter-spacing: -0.2em
     content: "\00a0"
@@ -124,6 +140,7 @@ code
     padding: 1em
   code
     font-size: 85%
+    white-space: inherit
     &:before, &:after
       content: none
 

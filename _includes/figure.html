@@ -1,4 +1,4 @@
-<figure class="figure">
+<figure class="figure {{ include.class }}">
   {% if include.href %}<a class="figure__a" href="{{ include.href }}">{% endif %}
     <img class="figure__img" src="/images/{{ include.src }}">
   {% if include.href %}</a>{% endif %}
