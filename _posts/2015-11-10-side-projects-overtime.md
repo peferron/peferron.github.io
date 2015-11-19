@@ -5,7 +5,7 @@ title: Experimenting with overtime and side projects
 
 *Warning: this post is completely about myself. Writing helps me clear my thoughts.*
 
-Last year, I decided to put my new side projects on Github. One year later I had a nice present: 1000 commits!
+Last year, I decided to put my new side projects on GitHub. One year later I had a nice present: 1000 commits!
 
 {% include figure.html src="github1000.png" %}
 
