@@ -5,7 +5,7 @@ title: "Talk: Modern JavaScript and intro to TypeScript"
 
 I did a lunch talk at work about modern JS: ECMAScript 5, 2015 and 2016. Please forgive the playfully baity title. :)
 
-{% include iframe.html src="https://peferron.com/modern-js-talk" caption="Slides and source code on <a href='https://github.com/peferron/modern-js-talk'>GitHub</a>." ratio="62.5%" %}
+{% include iframe.html src="https://peferron.com/modern-js-talk/" caption="Slides and source code on <a href='https://github.com/peferron/modern-js-talk/'>GitHub</a>." ratio="62.5%" %}
 
 It was my first time using [Reveal.js](https://github.com/hakimel/reveal.js/) and it was awesome. It has several killer features compared to PowerPoint:
 
