@@ -1,5 +1,8 @@
 <figure class="figure">
-    <div class="iframe-container">
+    <div class="iframe-container" {% if include.ratio %}style="padding-top: {{ include.ratio }}"{% endif %}>
         <iframe src="{{ include.src }}" frameborder="0" allowfullscreen></iframe>
     </div>
+    {% if include.caption %}
+    <figcaption class="figure__caption">{{ include.caption }}</figcaption>
+    {% endif %}
 </figure>
