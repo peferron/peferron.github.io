@@ -23,7 +23,7 @@ TL;DR not worth it. My output was higher during the first two months, but then I
 
 My happiness level also took a massive plunge. Months two and three were awful.
 
-{% include youtube.html id="Go_p6oD7AIE" %}
+{% include iframe.html src="https://www.youtube.com/embed/Go_p6oD7AIE" %}
 
 Lessons from this experiment:
 
