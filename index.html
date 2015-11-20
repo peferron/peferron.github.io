@@ -40,21 +40,19 @@ layout: default
     }
   </script>
 </div>
-<br>
 
-<span class="home__name">Pierre-Emile Ferron</span>
-<br>
-
-<a href="https://github.com/peferron">GitHub</a> /
-<a href="https://www.linkedin.com/in/peferron">LinkedIn</a> /
-<a href="mailto:peferron@gmail.com">peferron@gmail.com</a>
-<br>
+<div>
+  <span class="home__name">Pierre-Emile Ferron</span>
+  <br>
+  <a href="https://github.com/peferron">GitHub</a> /
+  <a href="https://www.linkedin.com/in/peferron">LinkedIn</a> /
+  <a href="mailto:peferron@gmail.com">peferron@gmail.com</a>
+</div>
 
 <ul class="home__posts">
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <span class="date">— {% include date.html date=post.date %}</span>
+    <li CLASS="home__post">
+      <a href="{{ post.url }}">{{ post.title }}</a><br><span class="date">{% include date.html date=post.date %}</span>
     </li>
   {% endfor %}
 </ul>

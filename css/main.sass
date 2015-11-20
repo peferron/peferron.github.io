@@ -3,15 +3,10 @@
 
 // Common
 
-$ipadwidth: 768px
-$padding: 20px
-$doublepadding: $padding * 2
-$halfpadding: $padding / 2
-$maxwidth: $ipadwidth - $doublepadding
+$fontsize: 22px
 
-$normal: 22px
-$small: 0.8 * $normal
-$verysmall: 0.6 * $normal
+$ipadwidth: 768px
+$maxwidth: $ipadwidth - 2 * $fontsize
 
 $text: rgba(0, 0, 0, 0.8)
 $link: #0059a6
@@ -21,17 +16,20 @@ $lightgray: #CCC
 body
   height: 100%
   font-family: Alegreya, serif
-  font-size: 22px
+  font-size: $fontsize
   line-height: 1.6
   color: $text
   background: white
   max-width: $maxwidth
   margin: 0 auto
-  padding: $padding
+  padding: 2em 1em
   text-align: center
 
 h1, h2, h3, h4, h5, h6
   line-height: normal
+
+h1
+  font-size: 2em
 
 a, a:visited, a:hover
   color: $link
@@ -51,9 +49,7 @@ a:hover
 // Home
 
 .home__avatar
-  display: inline-block
-  width: 100%
-  margin: $padding 0 $doublepadding
+  margin-bottom: 2em
 
 .home__avatar__img
   width: 150px
@@ -61,7 +57,7 @@ a:hover
   display: block
 
 .home__avatar__ground
-  height: $halfpadding
+  height: 0.5em
   // background is randomly set by inline JS.
 
 .home__name
@@ -71,21 +67,26 @@ a:hover
   display: inline-block
   list-style-type: none
   padding: 0
-  margin: $doublepadding 0 0
+  margin: 2em 0
+
+.home__post
+  margin-top: 1em
+  &:first-child
+    margin-top: 0
 
 .home__rss
-  font-size: $small
+  font-size: 0.8em
 
 // Post
 
-.post__header, .post__footer
-  font-size: $small
+.post__home
+  font-size: 0.8em
 
 .post__title
-  margin: 11px 0 30px
+  margin: 0.5em 0
 
 .figure
-  margin: 0
+  margin: 1em 0
 
 .figure__a
   display: block
@@ -99,14 +100,14 @@ a:hover
   margin: 0 auto
 
 .figure__caption
-  margin: $halfpadding 0 0
+  margin: 0.5em 0 0
   color: $gray
   text-align: center
-  font-size: $small
+  font-size: 0.8em
 
 .post__license
   color: $gray
-  font-size: $verysmall
+  font-size: 0.6em
 
 .iframe-container
   position: relative
@@ -148,6 +149,6 @@ code
 
 @media (max-width: $ipadwidth)
   .figure, .highlight
-    margin: 0 (-$padding)
+    margin: 0 -1em
   .figure__caption
-    margin: $halfpadding $padding 0
+    margin: 0.5em 1em 0
