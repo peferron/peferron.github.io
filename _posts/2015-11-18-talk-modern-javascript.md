@@ -16,9 +16,9 @@ It was my first time using [Reveal.js](https://github.com/hakimel/reveal.js/) an
 
 That's the power of the web for you.
 
-Going back to the talk itself, the *wow* moment for the audience was turning our JS into valid TS by simply renaming the file extension from `js` to `ts`, and then demonstrating how type inference already brought increased safety against type mismatches and typos!
+Going back to the talk itself, the *wow* moment for the audience was turning our JS into valid TS by simply renaming the file extension from `.js` to `.ts`, and then demonstrating how type inference already brought increased safety against type mismatches and typos!
 
- (Alright, nobody actually screamed *wow*, but don't ruin my rosy recollection.)
+(Alright, nobody actually yelled *wow*, but don't ruin my rosy recollection.)
 
 The TypeScript team has done a great job keeping up with ECMAScript 2015+. It's awesome to see the TS compiler infer the type of `maxHumidity` and `minTemperature` based on their default values:
 
@@ -30,7 +30,7 @@ async function getLovelyDays({maxHumidity = 90, minTemperature = 80} = {}) {
 }
 ```
 
-The next step was showing the limits of type inference. The TS compiler cannot infer the type of `forecasts` since it's parsed from external JSON data. We solved it by declaring an interface and adding a type annotation:
+The next step showed the limits of type inference. The TS compiler cannot infer the type of `forecasts` since it's parsed from external JSON. We solved it by declaring an interface and adding a type annotation:
 
 ```ts
 interface Forecast {
