@@ -3,9 +3,9 @@ layout: post
 title: Iterating in Rust
 ---
 
-{% include figure.html src="silomem2_1536x1020.jpg" caption="Silomem II. Huile sur toile, 2009, <a href='https://twitter.com/odileferron'>Odile Ferron-Verron</a>." href="https://twitter.com/odileferron" %}
-
 I finished reading the [Rust book](https://doc.rust-lang.org/book/) a few days ago. [My first program](https://github.com/peferron/algo/tree/master/edge_connectivity) calculates the edge connectivity of a graph. It relies on iteration quite a lot, and I had the occasion to dig a bit deeper into Rust [Iterators](https://doc.rust-lang.org/book/iterators.html).
+
+{% include figure.html src="silomem2_1536x1020.jpg" caption="Silomem II. Huile sur toile, 2009, <a href='https://twitter.com/odileferron'>Odile Ferron-Verron</a>." href="https://twitter.com/odileferron" %}
 
 Iterators are a simple, idiomatic way to iterate over lazily generated sequences. Rust didn't invent them, but they are absent from enough popular languages to warrant a discussion.
 
