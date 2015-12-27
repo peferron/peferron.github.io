@@ -3,8 +3,15 @@ layout: default
 ---
 
 <div class="home__avatar">
-  <img class="home__avatar__img" src="/images/avatar_300x526.jpg">
+  <img class="home__avatar__img"
+    srcset="/images/avatar/avatar_450w.jpg 450w,
+      /images/avatar/avatar_300w.jpg 300w,
+      /images/avatar/avatar_150w.jpg 150w"
+    sizes="150px"
+    src="/images/avatar_150w.jpg">
+
   <div class="home__avatar__ground"></div>
+
   <noscript>
     <style>
       .home__avatar__ground {
@@ -12,6 +19,7 @@ layout: default
       }
     </style>
   </noscript>
+
   <script>
     var colors = [
       '#f24d8f', // pink
