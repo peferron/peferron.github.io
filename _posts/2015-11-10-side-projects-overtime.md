@@ -7,7 +7,7 @@ title: Experimenting with overtime and side projects
 
 Last year, I decided to put my new side projects on GitHub. One year later I had a nice present: 1000 commits!
 
-{% include figure.html src="github1000.png" %}
+{% include figure.html src="/images/github1000.png" %}
 
 It was a cool achievement because I didn't try to game the system. Every single commit was meaningful and helped me become better at what I do.
 
@@ -15,7 +15,7 @@ Then I decided to drop my side projects and work overtime instead. A project at 
 
 When I say *drop*, I don't mean it halfway. I didn't push a single commit in 3 months.
 
-{% include figure.html src="github696.png" caption="" %}
+{% include figure.html src="/images/github696.png" caption="" %}
 
 But what about the effect on my work?
 
@@ -35,7 +35,7 @@ I love side projects because they're all about building and learning. If you pic
 
 What you learn with your side projects will eventually make you bring more value in 8 hours than you would have in 9 hours otherwise. Everybody wins. This is especially true if you enjoy your work and intend to stay for many years.
 
-{% include figure.html class="figure--noscale" src="scv.png" caption="Your best friend, the SCV." %}
+{% include figure.html class="figure--noscale" src="/images/scv.png" caption="Your best friend, the SCV." %}
 
 This is old news to anyone who played or watched real-time strategy games such as Starcraft. You don't want to spend 100% of your economy producing SCVs (the Terran worker in Starcraft). But, unless going for a timing push, you don't want to completely stop producing SCVs either, or you will get crushed long-term. Your best strategy is to keep a steady production of SCVs going for almost the entire duration of the game.
 
