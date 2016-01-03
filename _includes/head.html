@@ -10,10 +10,17 @@
   <link rel="stylesheet" href="/css/main.css">
 
   {% include favicons.html %}
-  
+
   <meta name="description" content="{{ site.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-63086216-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script async src="//www.google-analytics.com/analytics.js"></script>
 </head>
