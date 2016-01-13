@@ -1,7 +1,9 @@
 # Site settings
 title: Hello! I'm Pierre-Emile Ferron
 appname: Pef
-description: Welcome to my blog. I talk about new things I learn in my journey to become a better software engineer.
+description: >-
+  Welcome to my blog. I talk about new things I learn in my journey to become a better software
+  engineer.
 url: "https://peferron.com"
 
 # Build settings
