@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Iterating in Rust
+title: "Iterating in Rust"
+description: "How to use Rust Iterators, and why. Beginner-friendly (I'm one!) with a lot of examples."
 ---
 
 I finished reading the [Rust book](https://doc.rust-lang.org/book/) a few days ago. [My first program](https://github.com/peferron/algo/tree/master/edge_connectivity) calculates the edge connectivity of a graph. It relies on iteration quite a lot, and I had the occasion to dig a bit deeper into Rust [iterators](https://doc.rust-lang.org/book/iterators.html).

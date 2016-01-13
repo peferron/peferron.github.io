@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Experimenting with overtime and side projects
+title: "Experimenting with overtime and side projects"
+description: "A very personal post about experiments I did on overtime, side projects, and learning. Complete with terrible analogies."
 ---
 
 *Warning: this post is completely about myself. Writing helps me clear my thoughts.*

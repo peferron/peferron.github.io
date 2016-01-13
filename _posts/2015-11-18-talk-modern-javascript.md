@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Talk: Modern JavaScript and intro to TypeScript"
+description: "Slides of a lunch talk I did at work about modern JS. Covers ECMAScript 5, 2015 and 2016. The blog post adds a quick introduction to TypeScript."
 ---
 
 I did a lunch talk at work about modern JS: ECMAScript 5, 2015 and 2016. Please forgive the playfully baity title. :)

@@ -1,8 +1,7 @@
 # Site settings
-title: Pierre-Emile Ferron
+title: Hello! I'm Pierre-Emile Ferron
 appname: Pef
-description: >
-  Rust, Go, JS, Swift, and getting better at software engineering.
+description: Welcome to my blog. I talk about new things I learn in my journey to become a better software engineer.
 url: "https://peferron.com"
 
 # Build settings
