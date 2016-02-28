@@ -7,8 +7,6 @@
 // Common
 
 $fontsize: 22px
-$fontweight: 300
-
 $ipadwidth: 768px
 $maxwidth: $ipadwidth - 2 * $fontsize
 
@@ -21,7 +19,7 @@ body
   height: 100%
   font-family: 'Lato', sans-serif
   font-size: $fontsize
-  font-weight: $fontweight
+  font-weight: 300
   line-height: 1.6
   color: $text
   background: white
@@ -32,14 +30,15 @@ body
 
 h1, h2, h3, h4, h5, h6
   line-height: normal
-  font-weight: $fontweight
+  font-weight: 300
 
 a, a:visited, a:hover
   color: $link
   text-decoration: none
+  font-weight: 400
 
 a:hover
-  text-decoration: underline
+  color: lighten($link, 10%)
 
 .content
   display: inline-block
