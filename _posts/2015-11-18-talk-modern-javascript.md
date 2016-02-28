@@ -33,7 +33,7 @@ async function getLovelyDays({maxHumidity = 90, minTemperature = 80} = {}) {
 
 The next step showed the limits of type inference. The TS compiler cannot infer the type of `forecasts` since it's parsed from external JSON. We solved it by declaring an interface and adding a type annotation:
 
-```ts
+```js
 interface Forecast {
   day: string;
   humidity: number;

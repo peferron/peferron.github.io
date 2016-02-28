@@ -7,7 +7,6 @@ description: >-
 url: "https://peferron.com"
 
 # Build settings
-markdown: redcarpet
 permalink: pretty
 exclude:
   - CNAME
@@ -17,6 +16,9 @@ exclude:
   - README.md
   - watch
   - npm-debug.log
+kramdown:
+  input: GFM
+  hard_wrap: false
 defaults:
   -
     values:
