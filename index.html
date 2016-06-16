@@ -27,17 +27,14 @@ layout: default
       '#8ad749'  // green
     ];
 
-    var color;
-    while (true) {
-      var i = Math.floor(Math.random() * colors.length);
-      color = colors[i];
-      try {
-        if (colors.length > 1 && localStorage.color === color) {
-          continue;
-        }
-      } catch (e) {
+    var colorIndex = Math.floor(Math.random() * colors.length);
+    var color = colors[colorIndex];
+    
+    try {
+      if (localStorage.color === color) {
+        color = colors[(colorIndex + 1) % colors.length]
       }
-      break;
+    } catch (e) {
     }
 
     document.querySelector('.home__avatar__ground').style.background = color;
