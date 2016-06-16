@@ -2,64 +2,70 @@
 layout: default
 ---
 
-<div class="home__avatar">
-  <img class="home__avatar__img"
-    srcset="/images/avatar/avatar_450w.jpg 450w,
-      /images/avatar/avatar_300w.jpg 300w,
-      /images/avatar/avatar_150w.jpg 150w"
-    sizes="150px"
-    src="/images/avatar/avatar_150w.jpg">
+<header>
+  <div class="home__avatar">
+    <img class="home__avatar__img"
+      srcset="/images/avatar/avatar_450w.jpg 450w,
+        /images/avatar/avatar_300w.jpg 300w,
+        /images/avatar/avatar_150w.jpg 150w"
+      sizes="150px"
+      src="/images/avatar/avatar_150w.jpg"
+      alt="">
 
-  <div class="home__avatar__ground"></div>
+    <div class="home__avatar__ground"></div>
 
-  <noscript>
-    <style>
-      .home__avatar__ground {
-        background: #0d9fd8;
+    <noscript>
+      <style>
+        .home__avatar__ground {
+          background: #0d9fd8;
+        }
+      </style>
+    </noscript>
+
+    <script>
+      var colors = [
+        '#f24d8f', // pink
+        '#0d9fd8', // blue
+        '#8ad749'  // green
+      ];
+
+      var colorIndex = Math.floor(Math.random() * colors.length);
+      var color = colors[colorIndex];
+
+      try {
+        if (localStorage.color === color) {
+          color = colors[(colorIndex + 1) % colors.length]
+        }
+      } catch (e) {
       }
-    </style>
-  </noscript>
 
-  <script>
-    var colors = [
-      '#f24d8f', // pink
-      '#0d9fd8', // blue
-      '#8ad749'  // green
-    ];
+      document.querySelector('.home__avatar__ground').style.background = color;
 
-    var colorIndex = Math.floor(Math.random() * colors.length);
-    var color = colors[colorIndex];
-    
-    try {
-      if (localStorage.color === color) {
-        color = colors[(colorIndex + 1) % colors.length]
+      try {
+        localStorage.color = color;
+      } catch (e) {
       }
-    } catch (e) {
-    }
+    </script>
+  </div>
 
-    document.querySelector('.home__avatar__ground').style.background = color;
+  <div>
+    <h2 class="home__title">{{ site.title }}</h2>
+    <a href="https://github.com/peferron">GitHub</a> /
+    <a href="https://www.linkedin.com/in/peferron">LinkedIn</a> /
+    <a href="mailto:peferron@gmail.com">peferron@gmail.com</a>
+  </div>
+</header>
 
-    try {
-      localStorage.color = color;
-    } catch (e) {
-    }
-  </script>
-</div>
+<nav>
+  <ul class="home__posts" role="navigation">
+    {% for post in site.posts %}
+      <li CLASS="home__post">
+        <a href="{{ post.url }}">{{ post.title }}</a><br><span class="date">{% include date.html date=post.date %}</span>
+      </li>
+    {% endfor %}
+  </ul>
+  
+  <br>
 
-<div>
-  <h2 class="home__title">{{ site.title }}</h2>
-  <a href="https://github.com/peferron">GitHub</a> /
-  <a href="https://www.linkedin.com/in/peferron">LinkedIn</a> /
-  <a href="mailto:peferron@gmail.com">peferron@gmail.com</a>
-</div>
-
-<ul class="home__posts">
-  {% for post in site.posts %}
-    <li CLASS="home__post">
-      <a href="{{ post.url }}">{{ post.title }}</a><br><span class="date">{% include date.html date=post.date %}</span>
-    </li>
-  {% endfor %}
-</ul>
-<br>
-
-<a class="home__rss" href="/feed.xml">Subscribe via RSS</a>
+  <a class="home__rss" href="/feed.xml">Subscribe via RSS</a>
+</nav>

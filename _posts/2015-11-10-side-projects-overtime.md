@@ -8,7 +8,7 @@ description: "A very personal post about experiments I did on overtime, side pro
 
 Last year, I decided to put my new side projects on GitHub. One year later I had a nice present: 1000 commits!
 
-{% include figure.html src="/images/github1000/github1000_730w.png" %}
+{% include figure.html src="/images/github1000/github1000_730w.png" alt="A GitHub screenshot showing 1000 commits." %}
 
 It was a cool achievement because I didn't try to game the system. Every single commit was meaningful and helped me become better at what I do.
 
@@ -16,7 +16,7 @@ Then I decided to drop my side projects and work overtime instead. A project at 
 
 When I say *drop*, I don't mean it halfway. I didn't push a single commit in 3 months.
 
-{% include figure.html src="/images/github696/github696_730w.png" caption="" %}
+{% include figure.html src="/images/github696/github696_730w.png" alt="A GitHub screenshot showing less than 700 commits." %}
 
 But what about the effect on my work?
 
@@ -38,7 +38,7 @@ What you learn with your side projects will eventually make you bring more value
 
 {% include figure.html class="figure--noscale" src="/images/scv/scv_120w.png" caption="Your best friend, the SCV." %}
 
-This is old news to anyone who played or watched real-time strategy games such as Starcraft. You don't want to spend 100% of your economy producing SCVs (the Terran worker in Starcraft). But, unless going for a timing push, you don't want to completely stop producing SCVs either, or you will get crushed long-term. Your best strategy is to keep a steady production of SCVs going for almost the entire duration of the game.
+This is old news to anyone who played or watched real-time strategy games such as StarCraft. You don't want to spend 100% of your economy producing SCVs (the Terran worker in StarCraft). But, unless going for a timing push, you don't want to completely stop producing SCVs either, or you will get crushed long-term. Your best strategy is to keep a steady production of SCVs going for almost the entire duration of the game.
 
 Your side projects are your SCVs. Keep building them!
 

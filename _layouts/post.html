@@ -4,13 +4,13 @@ layout: default
 
 <header>
   <a class="post__home" href="/">Home</a>
-</header>
-
-<article>
   <h1 class="post__title">{{ page.title }}</h1>
   <p>
     <span class="date">{% include date.html date=page.date %}</span>
   </p>
+</header>
+
+<article>
   {{ content }}
 </article>
 

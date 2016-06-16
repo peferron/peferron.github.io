@@ -1,16 +1,29 @@
 <figure class="figure {{ include.class }}">
-  {% if include.href %}<a class="figure__a" href="{{ include.href }}">{% endif %}
-    <img class="figure__img"
-        {% if include.srcset %}
-            srcset="{{ include.srcset }}"
-            {% if include.sizes %}
-                sizes="{{ include.sizes}}"
-            {% else %}
-                sizes="(min-width: 769px) 724px, 100vw"
-            {% endif %}
-        {% endif %}
-        {% if include.sizes %}sizes="{{ include.sizes }}"{% endif %}
-        src="{{ include.src }}">
-  {% if include.href %}</a>{% endif %}
-  <figcaption class="figure__caption">{{ include.caption }}</figcaption>
+  {% if include.href %}
+    <a class="figure__a" href="{{ include.href }}">
+  {% endif %}
+  <img class="figure__img"
+    {% if include.srcset %}
+      srcset="{{ include.srcset }}"
+      {% if include.sizes %}
+        sizes="{{ include.sizes}}"
+      {% else %}
+        sizes="(min-width: 769px) 724px, 100vw"
+      {% endif %}
+    {% endif %}
+    {% if include.sizes %}
+      sizes="{{ include.sizes }}"
+    {% endif %}
+    {% if include.alt %}
+      alt="{{ include.alt }}"
+    {% elsif include.caption %}
+      alt=""
+    {% endif %}
+    src="{{ include.src }}">
+  {% if include.href %}
+    </a>
+  {% endif %}
+  {% if include.caption %}
+    <figcaption class="figure__caption">{{ include.caption }}</figcaption>
+  {% endif %}
 </figure>
