@@ -2,70 +2,100 @@
 layout: default
 ---
 
-<header>
-  <div class="home__avatar">
-    <img class="home__avatar__img"
-      srcset="/images/avatar/avatar_450w.jpg 450w,
-        /images/avatar/avatar_300w.jpg 300w,
-        /images/avatar/avatar_150w.jpg 150w"
-      sizes="150px"
-      src="/images/avatar/avatar_150w.jpg"
-      alt="">
+<noscript>
+  <style>
+    .home__avatar__ground {
+      background: #0d9fd8;
+    }
+    .home__air {
+      display: none;
+    }
+  </style>
+</noscript>
 
-    <div class="home__avatar__ground"></div>
+<section class="home__avatar">
+  <img class="home__avatar__img"
+    srcset="/images/avatar/avatar_450w.jpg 450w,
+      /images/avatar/avatar_300w.jpg 300w,
+      /images/avatar/avatar_150w.jpg 150w"
+    sizes="150px"
+    src="/images/avatar/avatar_150w.jpg"
+    alt="">
 
-    <noscript>
-      <style>
-        .home__avatar__ground {
-          background: #0d9fd8;
-        }
-      </style>
-    </noscript>
+  <div class="home__avatar__ground"></div>
 
-    <script>
-      var colors = [
-        '#f24d8f', // pink
-        '#0d9fd8', // blue
-        '#8ad749'  // green
-      ];
+  <script>
+    var colors = [
+      '#f24d8f', // pink
+      '#0d9fd8', // blue
+      '#8ad749'  // green
+    ];
 
-      var colorIndex = Math.floor(Math.random() * colors.length);
-      var color = colors[colorIndex];
+    var colorIndex = Math.floor(Math.random() * colors.length);
+    var color = colors[colorIndex];
 
-      try {
-        if (localStorage.color === color) {
-          color = colors[(colorIndex + 1) % colors.length]
-        }
-      } catch (e) {
+    try {
+      if (localStorage.color === color) {
+        color = colors[(colorIndex + 1) % colors.length]
       }
+    } catch (e) {
+    }
 
-      document.querySelector('.home__avatar__ground').style.background = color;
+    document.querySelector('.home__avatar__ground').style.background = color;
 
-      try {
-        localStorage.color = color;
-      } catch (e) {
-      }
-    </script>
-  </div>
+    try {
+      localStorage.color = color;
+    } catch (e) {
+    }
+  </script>
+</section>
 
-  <div>
-    <h2 class="home__title">{{ site.title }}</h2>
-    <a href="https://github.com/peferron">GitHub</a> /
-    <a href="https://www.linkedin.com/in/peferron">LinkedIn</a> /
-    <a href="mailto:peferron@gmail.com">peferron@gmail.com</a>
-  </div>
-</header>
+<section>
+  <h2 class="home__title">{{ site.title }}</h2>
+  <a href="https://github.com/peferron">GitHub</a> /
+  <a href="https://www.linkedin.com/in/peferron">LinkedIn</a> /
+  <a href="mailto:peferron@gmail.com">peferron@gmail.com</a>
+</section>
 
-<nav>
-  <ul class="home__posts" role="navigation">
+<section class="home__air">
+  <h3 class="home__title">Air quality at my home in San Mateo, CA</h3>
+
+  <iframe class="home__air__iframe"
+    src="https://air-quality.peferron.com/grafana/dashboard-solo/db/air-quality?orgId=2&refresh=5m&panelId=1&theme=light"></iframe>
+
+  <script>
+    var iframe = document.querySelector('.home__air__iframe');
+
+    iframe.addEventListener('load', function() {
+      iframe.classList.add('home__air__iframe--loaded');
+    });
+  </script>
+
+  <!-- Hack to prevent this caption from dictating the page width. -->
+  <table class="home__air__caption">
+    <caption>
+      <small>
+        Sent from a Raspberry Pi using Rust, Redis, InfluxDB and Grafana.
+        <span class="home__air__caption__links">
+          <a href="#">Article</a>
+          &middot;
+          <a href="https://github.com/peferron/air-quality">Source code</a>
+        </span>
+      </small>
+    </caption>
+  </table>
+</section>
+
+<section>
+  <h3 class="home__title">Articles</h3>
+
+  <ul class="home__posts__list" role="navigation">
     {% for post in site.posts %}
       <li CLASS="home__post">
-        <a href="{{ post.url }}">{{ post.title }}</a><br><span class="date">{% include date.html date=post.date %}</span>
+        <a href="{{ post.url }}">{{ post.title }}</a><br><small class="date">{% include date.html date=post.date %}</small>
       </li>
     {% endfor %}
   </ul>
-  
-  <br>
 
-  <a class="home__rss" href="/feed.xml">Subscribe via RSS</a>
-</nav>
+  <a class="home__posts__rss" href="/feed.xml">Subscribe via RSS</a>
+</section>
