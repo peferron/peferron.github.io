@@ -4,8 +4,13 @@
 .post__title
   margin: 0.5em 0
 
+.post__title__link
+  &, &:active, &:hover, &:visited
+    font-weight: inherit
+    color: inherit
+
 .figure
-  margin: 1em 0
+  margin: 1.5em 0
 
 .figure__a
   display: block
@@ -61,6 +66,7 @@ code
 
 @media (max-width: $ipadwidth)
   .figure, .highlight
-    margin: 0 -1em
+    margin-left: -1em
+    margin-right: -1em
   .figure__caption
     margin: 0.5em 1em 0
