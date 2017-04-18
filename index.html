@@ -60,14 +60,18 @@ layout: default
 <section class="home__air">
   <h3 class="home__title">Air quality at my home in San Mateo, CA</h3>
 
-  <iframe class="home__air__iframe"
-    src="https://air-quality.peferron.com/grafana/dashboard-solo/db/air-quality?orgId=2&refresh=5m&panelId=1&theme=light"></iframe>
+  <div class="home__air__grafana">
+    <iframe class="home__air__grafana__iframe"
+      src="https://air-quality.peferron.com/grafana/dashboard-solo/db/air-quality?orgId=2&refresh=5m&panelId=1&theme=light"></iframe>
+    <a class="home__air__grafana__link"
+      href="https://air-quality.peferron.com/grafana/dashboard/db/air-quality?orgId=2&from=now-2d&to=now&refresh=5m&theme=light"></a>
+  </div>
 
   <script>
-    var iframe = document.querySelector('.home__air__iframe');
+    var iframe = document.querySelector('.home__air__grafana__iframe');
 
     iframe.addEventListener('load', function() {
-      iframe.classList.add('home__air__iframe--loaded');
+      iframe.classList.add('home__air__grafana__iframe--loaded');
     });
   </script>
 

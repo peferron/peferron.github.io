@@ -13,7 +13,12 @@
 .home__air
   overflow: hidden
 
-.home__air__iframe
+.home__air__grafana
+  position: relative
+
+.home__air__grafana__iframe
+  position: relative
+  z-index: 1
   background-color: transparent
   border: 0px none transparent
   padding: 0px
@@ -24,9 +29,18 @@
   margin: 0 0 0 -10px
   opacity: 0
 
-.home__air__iframe--loaded
+.home__air__grafana__iframe--loaded
   transition: opacity 1s ease-out
   opacity: 1
+
+.home__air__grafana__link
+  position: absolute
+  z-index: 2
+  display: block
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
 
 .home__air__caption
   width: 100%
