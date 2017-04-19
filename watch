@@ -8,4 +8,5 @@ browser-sync start \
 --proxy="localhost:4000" \
 --files="**/*.html,**/*.css,**/*.js" \
 --browser="google chrome" \
---reloadDelay="1000"
+--reloadDelay="1000" \
+--no-notify
