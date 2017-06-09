@@ -69,7 +69,6 @@ Since InfluxDB offers an HTTP API, measurements can be sent straight to it. But 
 
 So I wrote a tiny HTTP server that receives raw measurements, adds a field with the computed AQI, and writes the whole thing to InfluxDB. This also makes it easier to swap InfluxDB with another DB later.
 
-That's it! It was a fun week-end project. The code is on [GitHub](https://github.com/peferron/air-quality).
+That's it! It was a fun week-end project. The code is on [GitHub](https://github.com/peferron/air-quality), and the dashboard is [live here](https://air-quality.peferron.com/grafana/dashboard/db/air-quality?orgId=2&from=now-7d&to=now&refresh=5m&theme=light).
 
 {% include figure.html srcset="/images/air-graph/air-graph_768x176.png 768w, /images/air-graph/air-graph_1085x248.png 1085w" src="/images/air-graph/air-graph_768x176.png" caption="Turns out cooking is much worse than commuting." %}
-
