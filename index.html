@@ -81,9 +81,9 @@ layout: default
   <div class="home__air__grafana">
     <div class="home__air__grafana__spinner"></div>
     <iframe class="home__air__grafana__iframe" onload="onGrafanaIFrameLoaded(event)"
-      src="https://air-quality.peferron.com/grafana/dashboard-solo/db/air-quality?orgId=2&refresh=5m&panelId=1&theme=light"></iframe>
+      src="https://air-quality.peferron.com/grafana/dashboard-solo/db/air-quality?orgId=2&from=1560063600000&to=1560150000000&panelId=1&theme=light"></iframe>
     <a class="home__air__grafana__link"
-      href="https://air-quality.peferron.com/grafana/dashboard/db/air-quality?orgId=2&from=now-2d&to=now&refresh=5m&theme=light"></a>
+      href="https://air-quality.peferron.com/grafana/dashboard/db/air-quality?orgId=2&from=1490338800000&to=1560150000000&theme=light"></a>
   </div>
 
   <!-- Hack to prevent this caption from dictating the page width. -->
@@ -96,6 +96,11 @@ layout: default
           &middot;
           <a href="https://github.com/peferron/air-quality">Source code</a>
         </span>
+        <p>
+          <small>
+            Update: air quality in San Mateo is consistently good, so I have turned the system off to preserve components for when they are needed the most (e.g. wildfires). Data from March 2017 to June 2019 is still available.
+          </small>
+        </p>
       </small>
     </caption>
   </table>
